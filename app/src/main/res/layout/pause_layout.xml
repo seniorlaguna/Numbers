@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_vertical|center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:id="@+id/pauseTextView"
+        android:textSize="60dip"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resumeImageButton"
+        android:layout_gravity="center"
+        android:src="@drawable/resume"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/restartImageButton"
+        android:layout_gravity="center"
+        android:src="@drawable/restart"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick" />
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/exitImageButton"
+        android:layout_gravity="center"
+        android:src="@drawable/exit"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick" />
+</LinearLayout>

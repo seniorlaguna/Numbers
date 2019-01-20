@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.seniorlaguna.numbers.MenuActivity"
+    android:orientation="vertical"
+    android:background="@drawable/menubackground"
+    android:gravity="top">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleImageView"
+        android:src="@drawable/title"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_title_margin"
+        android:cropToPadding="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/originalImageButton"
+        android:src="@drawable/original"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick"
+        android:layout_above="@+id/reverseImageButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/reverseImageButton"
+        android:src="@drawable/reverse"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/surviveImageButton"
+        android:src="@drawable/survive"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick"
+        android:layout_below="@id/reverseImageButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/highscoreImageButton"
+        android:src="@drawable/highscore"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:onClick="onClick"
+        android:layout_below="@id/surviveImageButton"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/soundToggleImageButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/musicon"
+        android:scaleType="fitCenter"
+        android:background="@color/transparent"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:onClick="onClick" />
+</RelativeLayout>

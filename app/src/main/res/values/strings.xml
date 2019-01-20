@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Numbers</string>
+
+    <string name="original_instruction">From 1 To 25</string>
+    <string name="reverse_instruction">From 25 To 1</string>
+    <string name="survive_instruction">From 1 To 25</string>
+    <string name="normal_status">Your Time</string>
+    <string name="highscore_status">New Highscore</string>
+
+    <string name="share_text">Hey!!! I am playing Numbers. Try it out and try to beat me! Get it from Play Store: https://play.google.com/store/apps/details?id=de.tenminuteapps.numbers</string>
+</resources>
